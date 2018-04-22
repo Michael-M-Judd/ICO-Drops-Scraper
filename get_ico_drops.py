@@ -37,7 +37,7 @@ ico_data = [
 ]
 
 # iterate through all of the ICO links
-for i in range(len(ico_links)):
+for i in range(len(ico_links) - 1):
     i = str(i + 1) # we have to use an index due to moving between pages
     ico_link = driver.find_element_by_xpath('//*[@id="ajaxc"]/div/div/div[' + i + ']/a')
     name = driver.find_element_by_xpath('//*[@id="ajaxc"]/div/div/div[' + i + ']/a/div/div[1]/div[2]/h3/a').text
